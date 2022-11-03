@@ -1,18 +1,18 @@
 /*******************************TAG SELECTORS*******************************/
 body {
   font-family: "Montserrat-Black", sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
 }
 
 h2 {
-  font-family: "Montserrat-Bold", sans-serif;
-  font-size: 3rem;
   font-weight: 900;
-  line-height: 1.5;
 }
 
 h3 {
-  font-family: "Montserrat";
-  font-size: 1.5rem;
   font-weight: 600
 }
 
@@ -20,8 +20,15 @@ p {
   color: #8f8f8f;
 }
 
-
 /*******************************CLASS SELECTORS*******************************/
+/* Headings */
+.big-heading {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
 /* Features Icons */
 .bullseye {
   color: #EF8172;
@@ -46,17 +53,21 @@ p {
 .check-circle:hover {
   color: #ff4c68;
 }
-.cta-phrase{
+
+.cta-phrase {
   padding-top: 3rem;
-  color:white;
+  color: white;
   font-family: "Montserrat";
 }
-.footer-button{
+
+.footer-button {
   background-color: transparent;
 }
-.footer-button:hover{
+
+.footer-button:hover {
   color: transparent;
 }
+
 .heart {
   color: #EF8172;
   margin: auto;
@@ -73,18 +84,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15% 7%;
-}
-
-.feature-box {
-  text-align: center;
-}
-
-.header {
-  font-family: "Montserrat";
-  font-size: 3.5rem;
-  font-weight: 900;
-  line-height: 1.5;
+  padding: 7% 15%;
 }
 
 .navbar {
@@ -109,18 +109,6 @@ p {
   margin: 20px 20px 50px;
 }
 
-.pricing-column {
-  padding: 3% 2%;
-}
-
-/* Title Image */
-.title-image {
-  transform: rotate(25deg);
-  width: 50%;
-  position: absolute;
-  right:30%;
-  /* z-index: -1; */
-}
 
 /*  */
 .testimonial-image {
@@ -129,45 +117,70 @@ p {
   margin: 20px;
 }
 
-.footer-p{
+.footer-p {
   margin-top: 10px;
   font-weight: bold;
 }
 
-@media (max-width:1028px){
-  #title{
+@media (max-width:1028px) {
+  #title {
     text-align: center;
   }
 
-  .title-image{
-    position:static;
+  .title-image {
+    position: static;
     transform: rotate(0);
   }
 }
 
 /*******************************ID SELECTORS*******************************/
+/* Features Section */
 #features {
   padding: 7% 15%;
   background-color: #fff;
-  position:relative;
+  position: relative;
   z-index: 1;
 }
+
+.feature-box {}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+/* title section */
 
 #title {
   background-color: #ff4c68;
   color: #fff;
+  text-align: left;
   /* position:relative;
   z-index: -1; */
   /* pongo el color blanco aca por si quiero agregar un subtitulo o algo,
   entonces no voy a tener que cambiar uno por uno, ya que esta
   todo dentro del title */
 }
+#title .container-fluid{
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+.title-image {
+  transform: rotate(25deg);
+  width: 50%;
+  position: absolute;
+  right: 30%;
+  /* z-index: -1; */
+}
 
 /* testimonials section */
 #testimonials {
   background-color: #EF8172;
-  text-align: center;
   color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 /* pricing section */
@@ -175,24 +188,27 @@ p {
   padding: 100px;
 }
 
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 #press {
   background-color: #EF8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
-#cta{
+#cta {
   background-color: #ff4c68;
   font-family: "Montserrat";
   font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
-
 }
 
-#footer{
-  background-color: fff;
-  text-align: center;
-  padding-top: 4.5rem;
-
+#footer {
+  background-color: #fff;
 }
