@@ -83,8 +83,19 @@ p {
   margin: 5% 3% 5% 0;
 }
 
+/* containers */
 .container-fluid {
   padding: 7% 15%;
+}
+/* sections */
+
+.colored-section{
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section{
+  background-color: #fff;
 }
 
 .navbar {
@@ -137,7 +148,6 @@ p {
 /* Features Section */
 #features {
   padding: 7% 15%;
-  background-color: #fff;
   position: relative;
   z-index: 1;
 }
@@ -150,8 +160,6 @@ p {
 /* title section */
 
 #title {
-  background-color: #ff4c68;
-  color: #fff;
   text-align: left;
   /* position:relative;
   z-index: -1; */
@@ -173,9 +181,8 @@ p {
 }
 
 /* testimonials section */
-#testimonials {
+ #testimonials {
   background-color: #EF8172;
-  color: #fff;
 }
 
 .testimonial-text {
@@ -203,7 +210,6 @@ p {
 }
 
 #cta {
-  background-color: #ff4c68;
   font-family: "Montserrat";
   font-size: 2.5rem;
   font-weight: bold;
